@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cinzel;
+    line-height: 1.6;
+}
+
+/*-------------SECCIÓN NAV BARRA LOGO LINKS Y RESPONSIVE -----------------*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c2c0c0;
+    color: #000000;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    max-height: 130px; /* Ajusta este valor según el tamaño que desees */
+    margin-left: 90px; /* Espacio entre el logo y los links */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 250px;
+}
+
+.nav-links li {
+    margin-left: 100px;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.menu-toggle .bar {
+    height: 2px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+
+/*-----RESPONSIVE MENU HAMBURGUESA-----------------------*/
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%; /* Esto hace que el menú se despliegue justo debajo del nav */
+        left: 0;
+        background-color: #333;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+
+.indeximagen {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho */
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box {
+    background-color: #c0cedd;
+    padding: 70px;
+    border-radius: 40px;
+    box-shadow: 0 12px 14px rgba(0, 0, 0, 0.637);
+
+
+}
+
+.box img {
+    margin-left: 700px;
+    margin-top: -200px;
+    display: flex;
+    justify-content: center; /* Mueve el texto a la izquierda y la imagen a la derecha */
+    align-items: center; /* Centra verticalmente los elementos dentro del footer */
+}
+
+
+/*-----------SECCION FOOTER----------------*/
+
+footer {
+    display: flex;
+    justify-content: center; /* Mueve el texto a la izquierda y la imagen a la derecha */
+    align-items: center; /* Centra verticalmente los elementos dentro del footer */
+    color: #000000;
+    padding: 10px 20px;
+    margin-top: 150px;
+    background-color: #c2c0c0;
+}
+
+footer img {
+    margin-left: 100px;
+}
