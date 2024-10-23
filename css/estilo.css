@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cinzel;
+    line-height: 1.6;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Esto empuja el footer hacia abajo */
+}
+
+/*-------------SECCIÓN NAV BARRA LOGO LINKS Y RESPONSIVE -----------------*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c2c0c0;
+    color: #000000;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-size: 18px;
+}
+
+.logo img {
+    max-height: 100px; /* Ajusta este valor según el tamaño que desees */
+    margin-left: 90px; /* Espacio entre el logo y los links */
+    padding: 0px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 250px;
+}
+
+.nav-links li {
+    margin-left: 100px;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.menu-toggle .bar {
+    height: 2px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+
+
+
+/*-----RESPONSIVE MENU HAMBURGUESA-----------------------*/
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%; /* Esto hace que el menú se despliegue justo debajo del nav */
+        left: 0;
+        background-color: #333;
+        text-align: center;
+        color: #ffff
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+/*----- FIN RESPONSIVE MENU HAMBURGUESA-----------------------*/
+
+/*Main*/
+
+
+.indeximagen {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho */
+    height: auto;
+}
+
+
+.contenedor {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box {
+    background-color: #c0cedd;
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 0 12px 14px rgba(0, 0, 0, 0.637);
+    text-align: left;
+    margin-top: 40px;
+    height: 100%;
+    font-size: 18px;
+}
+
+.box img {
+    margin-left: 700px;
+    margin-top: -200px;
+    display: flex;
+    justify-content:end; /* Mueve el texto a la izquierda y la imagen a la derecha */
+    align-items: center; /* Centra verticalmente los elementos dentro del footer */
+    height: 80%;
+    margin-bottom: 40px;
+}
+
+
+/*-----------SECCION FOOTER----------------*/
+footer {
+    min-height: 90px;
+    background-color: #c2c0c0;
+    padding: 10px 0;
+    color: #ffffff;
+    border-top: 1px solid #d72f2f;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Hace que el contenido se apile en columna */
+    text-align: center; /* Centra el texto */
+    position: relative;
+    width: 100%;
+
+}
+.footer .col-md-3 {
+    margin-bottom: 50px; 
+}
+
+.col-md-9{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.row{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 17px;
+    color: #000000;
+}
+
+.logo-footer {
+    display: flex;
+    
+}
+
+
+.logo-footer img {
+    max-height: 60px;
+    align-self: center;
+}
+
+
+/*NOSOTROS*/
+/* Estilo del main de la página Nosotros */
+.confia img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 650px; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que cubra el espacio sin deformarse */
+}
+
+
+.container_main_nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background: white;
+    
+    
+}
+
+/* Estilo del título */
+.row_titulo_nosotros {
+    margin-top: 25px;
+    font-size: 36px; /* Tamaño del título */
+    color: rgb(0, 0, 0); /* Color del título */
+    margin-bottom: 0;
+    
+}
+
+
+/* Alinear todo en una fila horizontal */
+.row_nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    grid-gap: 20px; /* Espacio entre las tarjetas */
+    justify-items: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 20px; /* Espacio interno */
+    background-color: #c0cedd;
+    border-radius: 30px;
+    width: 40%;
+    margin: 50px auto; /* Centra el contenedor horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cada div dentro de la fila */
+.row_nosotros div {
+    flex-shrink: 0; /* Evitar que los divs se reduzcan de tamaño */
+    text-align: center;
+
+}
+
+.row_nosotros img {
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: cover !important;
+    border-radius: 25px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 !important;
+}
+
+
+/* Estilo de los enlaces debajo de las imágenes */
+.row_nosotros a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px; /* Tamaño del texto del enlace */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.row_nosotros a:hover {
+    color: #ebecec;
+}
+
+.box_proyecto{
+    font: inter;
+    background-color: #c0cedd;
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 0 12px 14px rgba(0, 0, 0, 0.637);
+    text-align: left;
+    margin-top: 40px;
+    height: 100%;
+    font-size: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
