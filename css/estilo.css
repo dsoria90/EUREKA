@@ -283,3 +283,41 @@ footer p {
     margin-left: 250px;
     margin-right: 250px;
 }
+
+
+
+
+
+
+
+
+
+
+/*MAIN SITIO DEL PROYECTO*/
+
+.linkSitioProyectoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centra verticalmente */
+    align-items: center;      /* Centra horizontalmente */
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.linkSitioProyecto {
+    text-decoration: none;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.linkSitioProyecto:hover {
+    text-decoration: none;
+}
+
+.linkSitioProyectoSection video {
+    max-width: 80%;
+    height: auto;
+    display: block; /* Asegura que el video se comporte como un bloque */
+    margin: 0 auto; /* Esto centrará el video horizontalmente */
+}
