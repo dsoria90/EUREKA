@@ -294,40 +294,30 @@ footer p {
 
 
 /*MAIN SITIO DEL PROYECTO*/
+
 .linkSitioProyectoSection {
     display: flex;
-    flex-direction: column;    /* Coloca los elementos en columna, uno debajo del otro */
-    justify-content: center;   /* Centra verticalmente */
-    align-items: center;       /* Centra horizontalmente */
-    height: 100vh;             /* Ocupa toda la altura de la ventana */
+    flex-direction: column;
+    justify-content: center;  /* Centra verticalmente */
+    align-items: center;      /* Centra horizontalmente */
     text-align: center;
-    
-}
-
-.linkContainer, .videoContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .linkSitioProyecto {
     text-decoration: none;
     font-size: 2em;
-    margin-bottom: 20px;       /* Espacio entre el link y el video */
-    color: #000000;
-    margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 .linkSitioProyecto:hover {
-    color: #ff0000;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-.videoContainer video {
-    align-items: center;
-    width: 80%;                /* Ajusta el tamaño del video al 80% del contenedor */
-    max-width: 800px;           /* Limita el tamaño máximo del video */
-    height: auto;               /* Mantiene la proporción del video */
+.linkSitioProyectoSection video {
+    max-width: 80%;
+    height: auto;
+    display: block; /* Asegura que el video se comporte como un bloque */
+    margin: 0 auto; /* Esto centrará el video horizontalmente */
 }
