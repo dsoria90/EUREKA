@@ -152,7 +152,7 @@ main {
 footer {
     font-family: cinzel;
     color: #000000;
-    background-color: #4b4a4a95;
+    background-color: #C2C0C0;
     text-align: center;
     position: relative;
     width: 100%;
@@ -475,14 +475,14 @@ p {
     margin: 1rem;
 }
 #color1 {
-    background-color: #ADADAD;
+    background-color: #C2C0C0;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
     border: black solid 3px;
 
 }
 
 #color2 {
-    background-color: #13325B;
+    background-color: #C0CEDD;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
     border: black solid 3px;
 }
