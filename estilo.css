@@ -72,9 +72,9 @@ body {
         position: absolute;
         top: 100%; /* Esto hace que el menú se despliegue justo debajo del nav */
         left: 0;
-        background-color: #333;
+        background-color: #c2c0c0;
         text-align: center;
-        color: #ffff
+        color: #ffffff
     }
 
     .nav-links.active {
