@@ -18,6 +18,11 @@ html, body {
 
 main {
     flex: 1; /* Esto empuja el footer hacia abajo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /*-------------SECCIÓN NAV BARRA LOGO LINKS Y RESPONSIVE -----------------*/
