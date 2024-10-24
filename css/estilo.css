@@ -18,11 +18,13 @@ html, body {
 
 main {
     flex: 1; /* Esto empuja el footer hacia abajo */
+    
 }
 
 /*-------------SECCIÓN NAV BARRA LOGO LINKS Y RESPONSIVE -----------------*/
 
 .navbar {
+    font-family: cinzel;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,6 +83,7 @@ main {
 
 @media (max-width: 768px) {
     .nav-links {
+        font-family: cinzel;
         display: none;
         flex-direction: column;
         width: 100%;
@@ -121,6 +124,7 @@ main {
 }
 
 .box {
+    font-family: "Inter";
     background-color: #c0cedd;
     padding: 40px;
     border-radius: 40px;
@@ -142,54 +146,62 @@ main {
 }
 
 
-/*-----------SECCION FOOTER----------------*/
+
+/*-----------------------------------SECCION FOOTER--------------------------*/
+/* ESTILO GENERAL!! */
 footer {
-    min-height: 90px;
-    background-color: #c2c0c0;
-    padding: 10px 0;
-    color: #ffffff;
-    border-top: 1px solid #d72f2f;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    flex-direction: column; /* Hace que el contenido se apile en columna */
-    text-align: center; /* Centra el texto */
+    font-family: cinzel;
+    color: #000000;
+    background-color: #4b4a4a95;
+    text-align: center;
     position: relative;
     width: 100%;
-
-}
-.footer .col-md-3 {
-    margin-bottom: 50px; 
+    margin-top: 100px;
 }
 
-.col-md-9{
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5px;
-}
-.row{
-    width: 80%;
-    align-items: center;
-    justify-content: center;
+/* CONTENIDO EN VISTA PANTALLA COMPLETA */
+.footer-content {
+    display: flex;
+    justify-content: center; /* CENTRA LOS ELEMENTOS */
+    align-items: center; /* ALINEA VERTICALMENTE LOS ELEMENTOS */
+    padding: 15px 20px;
+    gap: 200px;
+    flex-wrap: nowrap;
 }
 
-footer p {
-    margin: 10px 0;
-    font-size: 17px;
+/* ESTILOS DE TEXTOS */
+.text-info {
+    display: flex;
+    flex-direction: column; /* APILAS LAS LINEAS VERTICALES */
+    align-items: center; /* CENTRA EL TEXTO */
+    margin-right: 20px; /* ESPACIO ENTRE EL TEXTO Y LOGO */
+}
+
+p {
     color: #000000;
 }
 
-.logo-footer {
-    display: flex;
-    
+.materia {
+    margin: 0 30px 0 0; /* MARGEN QUE SEPARA DE #CURSO */
 }
 
+.curso, .grupo {
+    margin: 0 15px; /* MARGEN QUE SEPARA AMBOS */
+}
+
+#derechos-reservados {
+    margin: 10px 0 0 0; /* SEPARACION ENTRE LAS LINEAS */
+}
+
+/* PARA EL LOGO DEL FOOTER*/
+.logo-footer {
+    max-height: 60px;
+}
 
 .logo-footer img {
     max-height: 60px;
-    align-self: center;
 }
+
 
 /*------------------------ESTILOS RESPONSIVOS PARA EL FOOTER ------------------------------*/
 @media (max-width: 790px) {
@@ -234,16 +246,17 @@ footer p {
 
 
 
-/*NOSOTROS*/
+/*INTEGRANTES*/
 /* Estilo del main de la página Nosotros */
 .confia img {
     width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
-    height: 650px; /* Mantiene la proporción de la imagen */
+    height: 700px; /* Mantiene la proporción de la imagen */
     object-fit: cover; /* Ajusta la imagen para que cubra el espacio sin deformarse */
 }
 
 
 .container_main_nosotros {
+    font-family: "Inter";
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -312,7 +325,7 @@ footer p {
     color: #ebecec;
 }
 
-.box-avances{
+.box_proyecto{
     font: inter;
     background-color: #c0cedd;
     padding: 40px;
@@ -338,6 +351,7 @@ footer p {
 /*MAIN SITIO DEL PROYECTO*/
 
 .linkSitioProyectoSection {
+    font-family: "Inter";
     display: flex;
     flex-direction: column;
     justify-content: center;  /* Centra verticalmente */
@@ -366,29 +380,24 @@ footer p {
 
 
 
+
+
+
+
 /*-----AVANCES------*/
 /*-----ESTILO FUENTE CIENZEL----------*/
-.fuentecinzel{
-    font-family: 'Cinzel';
-    line-height: 1.6;
-}
-.box-avances{
-    font: inter;
-    background-color: #c0cedd;
-    padding: 40px;
-    border-radius: 40px;
-    box-shadow: 0 12px 14px rgba(0, 0, 0, 0.637);
-    text-align: left;
-    margin-top: 40px;
-    height: 100%;
-    font-size: 20px;
-    margin-left: 250px;
-    margin-right: 250px;
+.mainAvances{
+    flex: 1; /* Esto empuja el footer hacia abajo */
+    display: flex;
+    flex-direction: column; /* Si deseas que el contenido esté en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+
 }
 
+
 /*----------NUESTRA PROPUESTA ---------*/
-.contenedor1{
-    font: inter;
+.contenedorAvances1{
     background-color: #c0cedd;
     padding: 40px;
     width: 85%;
@@ -398,11 +407,11 @@ footer p {
     justify-content: center;
     margin-top: 40px;
     font-size: 20px;
-    margin-left: 95px;
-    margin-right: 300px;
+
 }
 #propuesta{
     text-align: center;
+    font-size: 20px;
 }
 .inter {
     font-family: "Inter", sans-serif;
@@ -414,10 +423,28 @@ footer p {
 /*----------NUESTRA PROPUESTA RESPONSIVE---------*/
 
 @media (max-width: 768px) {
-    .contenedor1{
+    .contenedorAvances1{
         margin-left: 30px;
     }
 
+}
+
+.contenedorAvances2{
+    background-color: #c0cedd;
+    padding: 40px;
+    width: 85%;
+    border-radius: 40px;
+    box-shadow: 0 12px 14px rgba(0, 0, 0, 0.637);
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 20px;
+    align-items: center;
+
+}
+
+.fuentecinzel{
+    font-family: "Inter";
 }
 
 /*----------LOGO EUREKA EN AVANCES---------*/
@@ -425,24 +452,33 @@ footer p {
     height: 200px; width: 240px;
 }
 /*-------PALETA DE COLORES----------*/
+.colores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 .color {
     height: 150px;
     width: 150px;
     color: rgb(255, 255, 255);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border-radius: 20px;
     font-size: 25px;
     font-weight: 600;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 1rem;
-    margin-left: 490px;
 }
 #color1 {
     background-color: #ADADAD;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
     border: black solid 3px;
+
 }
 
 #color2 {
