@@ -365,6 +365,9 @@ p {
     margin-top: 15px; 
     transition: transform 0.3s, opacity 0.3s; 
 }
+#fotorole{
+height: 100px; widht: 100px;
+}
 
 .role-img:hover {
     transform: scale(1.1); 
