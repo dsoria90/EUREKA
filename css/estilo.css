@@ -278,37 +278,6 @@ p {
 }
 
 
-/* Alinear todo en una fila horizontal */
-.row_nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-    grid-gap: 20px; /* Espacio entre las tarjetas */
-    justify-items: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
-    padding: 20px; /* Espacio interno */
-    background-color: #c0cedd;
-    border-radius: 30px;
-    width: 40%;
-    margin: 50px auto; /* Centra el contenedor horizontalmente */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Cada div dentro de la fila */
-.row_nosotros div {
-    flex-shrink: 0; /* Evitar que los divs se reduzcan de tamaño */
-    text-align: center;
-
-}
-
-.row_nosotros img {
-    width: 150px !important;
-    height: 150px !important;
-    object-fit: cover !important;
-    border-radius: 25px !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 !important;
-}
-
 
 /*----------------------- INTEGRANTES DEL GRUPO-------------------- */
 
@@ -360,7 +329,7 @@ p {
 
 .role-img {
     width: 100px;
-    height: 100px;
+    height: 50px;
     border-radius: 50%;
     border: 2px solid #13325B;
     object-fit: cover; 
