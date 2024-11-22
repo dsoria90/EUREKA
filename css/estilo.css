@@ -290,7 +290,7 @@ p {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card:hover {
+.card: hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 } 
@@ -300,7 +300,7 @@ p {
     text-align: center;
     margin-bottom: 20px;
     position: relative;
-    font-family:inter;
+    font-family: inter;
 }
 
 
@@ -322,14 +322,14 @@ p {
     transition: transform 0.4s, box-shadow 0.4s; 
 }
 
-.role:hover {
+.role: hover {
     transform: translateY(-8px) scale(1.03); 
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .role-img {
     width: 100px;
-    height: 50px;
+    height: 100px;
     border-radius: 50%;
     border: 2px solid #13325B;
     object-fit: cover; 
