@@ -340,7 +340,17 @@ p {
 }
 
 
+@media (max-width: 768px) {
+#proyecto{
+    width: 320px;
+    transition: transform 0.3s, opacity 0.3s; 
+    text-align: center;
+}
+#fotoproyecto{
+max-width: 100%;  height: 300px;
+}
 
+}
 
 
 
@@ -468,7 +478,7 @@ p {
 .contenedorAvances2{
     background-color: #c0cedd;
     padding: 40px;
-    width: 85%;
+    width: 80%;
     border-radius: 40px;
     box-shadow: 0 12px 14px rgba(0, 0, 0, 0.637);
     text-align: center;
@@ -571,4 +581,19 @@ p {
 .rolesintegrantes{
 text-align: center;
 margin: auto;
+}
+
+/*---------- TITULO IDENTIDAD VISUAL----------*/
+.tituloimagenvisual{
+    margin-top: 10px;
+}
+
+/*---------- SUBTITULO IDENTIDAD VISUAL----------*/
+.subtituloimagen{
+    color: #cda841;
+    margin-top: 10px;
+    font-size: 25px;
+    transition: transform 0.4s, box-shadow 0.4s;
+    animation: slideUp 0.5s ease;
+    
 }
