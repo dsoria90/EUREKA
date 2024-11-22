@@ -407,7 +407,9 @@ p {
     justify-content: center;
     margin-top: 40px;
     font-size: 20px;
-
+    margin-left: 110px;
+    animation: slideUp 0.5s ease;
+    transition: transform 0.5s ease, box-shadow 0.2s ease;
 }
 #propuesta{
     text-align: center;
