@@ -357,8 +357,8 @@ p {
 }
 
 .role-img {
-    width: 70px;
-    height: 50px;
+    width: 50px;
+    height: 60px;
     border-radius: 50%;
     border: 2px solid #13325B;
     object-fit: cover; 
@@ -366,7 +366,7 @@ p {
     transition: transform 0.3s, opacity 0.3s; 
 }
 #fotorole{
-height: 100px; widht: 100px;
+height: 50px; widht: 60px;
 }
 
 .role-img:hover {
