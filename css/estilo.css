@@ -309,6 +309,8 @@ p {
 }
 
 /*----------------------- INTEGRANTES DEL GRUPO-------------------- */
+/*INTEGRANTES*/
+
 
 .card {
     background: #fff;
@@ -319,7 +321,7 @@ p {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card: hover {
+.card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 } 
@@ -329,7 +331,7 @@ p {
     text-align: center;
     margin-bottom: 20px;
     position: relative;
-    font-family: inter;
+    font-family:inter;
 }
 
 
@@ -341,7 +343,7 @@ p {
 }
 
 .role {
-    width: 240px;
+    width: 280px; /* Aumenta el ancho del contenedor */
     margin: 20px;
     text-align: center;
     border-radius: 12px;
@@ -351,22 +353,19 @@ p {
     transition: transform 0.4s, box-shadow 0.4s; 
 }
 
-.role: hover {
+.role:hover {
     transform: translateY(-8px) scale(1.03); 
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-.role-img {
-    width: 50px;
-    height: 60px;
-    border-radius: 50%;
-    border: 2px solid #13325B;
+.role img {
+    width: 200px; /* Aumenta el ancho */
+    height: 200px; /* Aumenta la altura */
+    border-radius: 5%;
+    border: 3px solid #13325B; /* Ajusta el grosor del borde */
     object-fit: cover; 
     margin-top: 15px; 
     transition: transform 0.3s, opacity 0.3s; 
-}
-#fotorole{
-height: 60px; widht: 40px;
 }
 
 .role-img:hover {
@@ -393,10 +392,21 @@ height: 60px; widht: 40px;
     color: #555;
     text-decoration: none;
     font-size: 14px; /* Tamaño del texto del enlace */
+
+
+
+}
+
+/* Estilo de los enlaces debajo de las imágenes */
+.enlaceportfolio{
+    display: block;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px; /* Tamaño del texto del enlace */
 }
 
 
-}
+
 
 /*--------PROYECTO------------*/
 .box_proyecto{
@@ -675,3 +685,5 @@ margin: auto;
     animation: slideUp 0.5s ease;
     
 }
+
+
