@@ -137,14 +137,4 @@ footer img {
 
 
 
-.video-container {
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center;    /* Centrar verticalmente */
-    min-height: 50vh;       /* Ajustar altura mínima para centrar verticalmente */
-    width: 560 px;
-    height: auto;
-    margin-top: 70px;
-
-}
 
